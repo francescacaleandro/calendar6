@@ -14,7 +14,7 @@
       --text-muted: #888;
       --text-old: #6d6d6d;
       --radius: 6px;
-      --gap: 4px; /* ridotto per strisce più vicine */
+      --gap: 4px; /* spaziatura ridotta */
     }
 
     /* Body e wrapper con overflow nascosto */
@@ -29,7 +29,7 @@
       position: relative;
     }
 
-    /* Frecce di navigazione */
+    /* Frecce di navigazione (più piccole) */
     .nav-button {
       position: absolute;
       top: 50%;
@@ -37,9 +37,9 @@
       background: rgba(0, 0, 0, 0.5);
       border: none;
       color: var(--text);
-      font-size: 24px;
-      width: 32px;
-      height: 32px;
+      font-size: 20px;      /* leggermente ridotto */
+      width: 24px;          /* contenitore più piccolo */
+      height: 24px;         /* contenitore più piccolo */
       border-radius: 50%;
       cursor: pointer;
       display: flex;
@@ -47,8 +47,8 @@
       justify-content: center;
       z-index: 10;
     }
-    .nav-button.left { left: 8px; }
-    .nav-button.right { right: 8px; }
+    .nav-button.left { left: 4px; }
+    .nav-button.right { right: 4px; }
     .nav-button:hover {
       background: rgba(0, 0, 0, 0.7);
     }
@@ -259,4 +259,3 @@
   </script>
 </body>
 </html>
-
